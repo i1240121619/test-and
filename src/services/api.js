@@ -1,5 +1,6 @@
 import { stringify } from 'qs';
 import request from '../utils/request';
+import { baseUrl } from './baseUrl'   //根据开发环境 变换基础url
 
 export async function queryProjectNotice() {
   return request('/api/project/notice');
